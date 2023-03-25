@@ -1,0 +1,19 @@
+{
+  "name": "chode",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "serve": "tsx index.ts"
+  },
+  "dependencies": {
+    "transpile": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsx": "^3.12.6",
+    "typescript": "^4.5.2"
+  }
+}
