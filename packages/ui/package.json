@@ -6,17 +6,13 @@
     "lint": "eslint *.ts*"
   },
   "exports": {
-    "./foo": "./src/foo/index.ts",
-    "./bar": "./src/bar/index.ts"
-  },
-  "typesVersions": {
-    "*": {
-      "foo": [
-        "./src/foo/index.ts"
-      ],
-      "bar": [
-        "./src/bar/index.ts"
-      ]
+    "./foo": {
+      "import": "./src/foo/index.ts",
+      "types": "./src/foo/index.ts"
+    },
+    "./bar": {
+      "import": "./src/bar/index.ts",
+      "types": "./src/bar/index.ts"
     }
   },
   "devDependencies": {
@@ -26,6 +22,6 @@
     "eslint-config-custom": "workspace:*",
     "react": "^18.2.0",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.2"
+    "typescript": "^5.0.2"
   }
 }

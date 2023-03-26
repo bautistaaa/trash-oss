@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint *.ts*",
-    "serve": "tsx index.ts"
+    "start": "tsx index.ts",
+    "serve": "node ./dist/index.js"
   },
   "dependencies": {
     "transpile": "workspace:*"
@@ -14,6 +16,6 @@
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "tsx": "^3.12.6",
-    "typescript": "^4.5.2"
+    "typescript": "^5.0.2"
   }
 }

@@ -24,7 +24,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       tsconfig: workspace:*
-      typescript: ^4.5.3
+      typescript: ^5.0.2
       ui: workspace:*
     dependencies:
       next: 13.2.4_hrdbe576m4w26u2yfpqpvbxyky
@@ -39,7 +39,7 @@ importers:
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   apps/node:
     specifiers:
@@ -48,7 +48,7 @@ importers:
       transpile: workspace:*
       tsconfig: workspace:*
       tsx: ^3.12.6
-      typescript: ^4.5.2
+      typescript: ^5.0.2
     dependencies:
       transpile: link:../../packages/transpile
     devDependencies:
@@ -56,7 +56,7 @@ importers:
       eslint-config-custom: link:../../packages/eslint-config-custom
       tsconfig: link:../../packages/tsconfig
       tsx: 3.12.6
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   apps/web:
     specifiers:
@@ -71,7 +71,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       tsconfig: workspace:*
-      typescript: ^4.5.3
+      typescript: ^5.0.2
       ui: workspace:*
     dependencies:
       common: link:../../packages/common
@@ -87,7 +87,7 @@ importers:
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
       tsconfig: link:../../packages/tsconfig
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/common:
     specifiers:
@@ -97,7 +97,7 @@ importers:
       eslint-config-custom: workspace:*
       react: ^18.2.0
       tsconfig: workspace:*
-      typescript: ^4.5.2
+      typescript: ^5.0.2
     devDependencies:
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
@@ -105,7 +105,7 @@ importers:
       eslint-config-custom: link:../eslint-config-custom
       react: 18.2.0
       tsconfig: link:../tsconfig
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/eslint-config-custom:
     specifiers:
@@ -114,27 +114,27 @@ importers:
       eslint-config-prettier: ^8.3.0
       eslint-config-turbo: latest
       eslint-plugin-react: 7.31.8
-      typescript: ^4.7.4
+      typescript: ^5.0.2
     dependencies:
       eslint: 7.32.0
-      eslint-config-next: 13.0.0_jofidmxrjzhj7l6vknpw5ecvfe
+      eslint-config-next: 13.0.0_jeuwjvsopuo23ctsjsevxmvjsi
       eslint-config-prettier: 8.8.0_eslint@7.32.0
       eslint-config-turbo: 0.0.10_eslint@7.32.0
       eslint-plugin-react: 7.31.8_eslint@7.32.0
     devDependencies:
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/transpile:
     specifiers:
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       tsconfig: workspace:*
-      typescript: ^4.5.2
+      typescript: ^5.0.2
     devDependencies:
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       tsconfig: link:../tsconfig
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/tsconfig:
     specifiers: {}
@@ -147,7 +147,7 @@ importers:
       eslint-config-custom: workspace:*
       react: ^18.2.0
       tsconfig: workspace:*
-      typescript: ^4.5.2
+      typescript: ^5.0.2
     devDependencies:
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
@@ -155,7 +155,7 @@ importers:
       eslint-config-custom: link:../eslint-config-custom
       react: 18.2.0
       tsconfig: link:../tsconfig
-      typescript: 4.9.5
+      typescript: 5.0.2
 
 packages:
 
@@ -820,7 +820,7 @@ packages:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
     dev: true
 
-  /@typescript-eslint/parser/5.56.0_jofidmxrjzhj7l6vknpw5ecvfe:
+  /@typescript-eslint/parser/5.56.0_jeuwjvsopuo23ctsjsevxmvjsi:
     resolution: {integrity: sha512-sn1OZmBxUsgxMmR8a8U5QM/Wl+tyqlH//jTqCg8daTAmhAk26L2PFhcqPLlYBhYUJMZJK276qLXlHN3a83o2cg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -832,10 +832,10 @@ packages:
     dependencies:
       '@typescript-eslint/scope-manager': 5.56.0
       '@typescript-eslint/types': 5.56.0
-      '@typescript-eslint/typescript-estree': 5.56.0_typescript@4.9.5
+      '@typescript-eslint/typescript-estree': 5.56.0_typescript@5.0.2
       debug: 4.3.4
       eslint: 7.32.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -853,7 +853,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@typescript-eslint/typescript-estree/5.56.0_typescript@4.9.5:
+  /@typescript-eslint/typescript-estree/5.56.0_typescript@5.0.2:
     resolution: {integrity: sha512-41CH/GncsLXOJi0jb74SnC7jVPWeVJ0pxQj8bOjH1h2O26jXN3YHKDT1ejkVz5YeTEQPeLCCRY0U2r68tfNOcg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -868,8 +868,8 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.3.8
-      tsutils: 3.21.0_typescript@4.9.5
-      typescript: 4.9.5
+      tsutils: 3.21.0_typescript@5.0.2
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1321,7 +1321,7 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  /eslint-config-next/13.0.0_jofidmxrjzhj7l6vknpw5ecvfe:
+  /eslint-config-next/13.0.0_jeuwjvsopuo23ctsjsevxmvjsi:
     resolution: {integrity: sha512-y2nqWS2tycWySdVhb+rhp6CuDmDazGySqkzzQZf3UTyfHyC7og1m5m/AtMFwCo5mtvDqvw1BENin52kV9733lg==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
@@ -1332,7 +1332,7 @@ packages:
     dependencies:
       '@next/eslint-plugin-next': 13.0.0
       '@rushstack/eslint-patch': 1.2.0
-      '@typescript-eslint/parser': 5.56.0_jofidmxrjzhj7l6vknpw5ecvfe
+      '@typescript-eslint/parser': 5.56.0_jeuwjvsopuo23ctsjsevxmvjsi
       eslint: 7.32.0
       eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 2.7.1_4heylg5ce4zxl5r7mnxe6vqlki
@@ -1340,7 +1340,7 @@ packages:
       eslint-plugin-jsx-a11y: 6.7.1_eslint@7.32.0
       eslint-plugin-react: 7.31.8_eslint@7.32.0
       eslint-plugin-react-hooks: 4.6.0_eslint@7.32.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
@@ -1413,7 +1413,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.56.0_jofidmxrjzhj7l6vknpw5ecvfe
+      '@typescript-eslint/parser': 5.56.0_jeuwjvsopuo23ctsjsevxmvjsi
       debug: 3.2.7
       eslint: 7.32.0
       eslint-import-resolver-node: 0.3.7
@@ -1432,7 +1432,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.56.0_jofidmxrjzhj7l6vknpw5ecvfe
+      '@typescript-eslint/parser': 5.56.0_jeuwjvsopuo23ctsjsevxmvjsi
       array-includes: 3.1.6
       array.prototype.flat: 1.3.1
       array.prototype.flatmap: 1.3.1
@@ -2658,14 +2658,14 @@ packages:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: false
 
-  /tsutils/3.21.0_typescript@4.9.5:
+  /tsutils/3.21.0_typescript@5.0.2:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
     engines: {node: '>= 6'}
     peerDependencies:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
     dependencies:
       tslib: 1.14.1
-      typescript: 4.9.5
+      typescript: 5.0.2
     dev: false
 
   /tsx/3.12.6:
@@ -2758,9 +2758,9 @@ packages:
       is-typed-array: 1.1.10
     dev: false
 
-  /typescript/4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
     hasBin: true
 
   /unbox-primitive/1.0.2:
