@@ -7,10 +7,12 @@ importers:
       eslint-config-custom: workspace:*
       prettier: latest
       turbo: latest
+      typescript: ^5.0.2
     devDependencies:
       eslint-config-custom: link:packages/eslint-config-custom
       prettier: 2.8.7
       turbo: 1.8.5
+      typescript: 5.0.2
 
   apps/docs:
     specifiers:
