@@ -4,17 +4,15 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint *.ts*",
-    "start": "tsx index.ts",
-    "serve": "node ./dist/index.js"
+    "start": "tsx index.ts"
   },
   "dependencies": {
-    "transpile": "workspace:*"
+    "@trash-oss/transpile": "workspace:*"
   },
   "devDependencies": {
+    "@trash-oss/tsconfig": "workspace:*",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*",
     "tsx": "^3.12.6",
     "typescript": "^5.0.2"
   }

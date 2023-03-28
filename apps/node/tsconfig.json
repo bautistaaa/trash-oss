@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/base.json",
+  "extends": "@trash-oss/tsconfig/base.json",
   "include": ["src"],
   "exclude": ["dist", "build", "node_modules"]
 }

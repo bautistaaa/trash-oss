@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "extends": "tsconfig/base.json",
+  "extends": "@trash-oss/tsconfig/base.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

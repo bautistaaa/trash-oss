@@ -11,12 +11,14 @@ importers:
     devDependencies:
       eslint-config-custom: link:packages/eslint-config-custom
       prettier: 2.8.7
-      turbo: 1.8.5
+      turbo: 1.8.6
       typescript: 5.0.2
 
   apps/docs:
     specifiers:
       '@babel/core': ^7.0.0
+      '@trash-oss/tsconfig': workspace:*
+      '@trash-oss/ui': workspace:*
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
@@ -25,89 +27,107 @@ importers:
       next: ^13.1.1
       react: 18.2.0
       react-dom: 18.2.0
-      tsconfig: workspace:*
       typescript: ^5.0.2
-      ui: workspace:*
     dependencies:
+      '@trash-oss/ui': link:../../packages/ui
       next: 13.2.4_hrdbe576m4w26u2yfpqpvbxyky
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.21.3
+      '@trash-oss/tsconfig': link:../../packages/config/tsconfig
       '@types/node': 17.0.45
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      tsconfig: link:../../packages/tsconfig
       typescript: 5.0.2
 
   apps/node:
     specifiers:
+      '@trash-oss/transpile': workspace:*
+      '@trash-oss/tsconfig': workspace:*
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
-      transpile: workspace:*
-      tsconfig: workspace:*
       tsx: ^3.12.6
       typescript: ^5.0.2
     dependencies:
-      transpile: link:../../packages/transpile
+      '@trash-oss/transpile': link:../../packages/transpile
     devDependencies:
+      '@trash-oss/tsconfig': link:../../packages/config/tsconfig
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      tsconfig: link:../../packages/tsconfig
       tsx: 3.12.6
       typescript: 5.0.2
 
   apps/web:
     specifiers:
       '@babel/core': ^7.0.0
+      '@trash-oss/common': workspace:*
+      '@trash-oss/tsconfig': workspace:*
+      '@trash-oss/ui': workspace:*
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
-      common: workspace:*
       eslint: 7.32.0
       eslint-config-custom: workspace:*
       next: ^13.1.1
       react: 18.2.0
       react-dom: 18.2.0
-      tsconfig: workspace:*
       typescript: ^5.0.2
-      ui: workspace:*
     dependencies:
-      common: link:../../packages/common
+      '@trash-oss/common': link:../../packages/common
+      '@trash-oss/ui': link:../../packages/ui
       next: 13.2.4_hrdbe576m4w26u2yfpqpvbxyky
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.21.3
+      '@trash-oss/tsconfig': link:../../packages/config/tsconfig
       '@types/node': 17.0.45
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
-      tsconfig: link:../../packages/tsconfig
       typescript: 5.0.2
 
   packages/common:
     specifiers:
+      '@trash-oss/tsconfig': workspace:*
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       react: ^18.2.0
-      tsconfig: workspace:*
       typescript: ^5.0.2
     devDependencies:
+      '@trash-oss/tsconfig': link:../config/tsconfig
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       react: 18.2.0
-      tsconfig: link:../tsconfig
       typescript: 5.0.2
+
+  packages/config/eslint:
+    specifiers:
+      eslint: ^7.23.0
+      eslint-config-next: 13.0.0
+      eslint-config-prettier: ^8.3.0
+      eslint-config-turbo: latest
+      eslint-plugin-react: 7.31.8
+      typescript: ^5.0.2
+    dependencies:
+      eslint: 7.32.0
+      eslint-config-next: 13.0.0_jeuwjvsopuo23ctsjsevxmvjsi
+      eslint-config-prettier: 8.8.0_eslint@7.32.0
+      eslint-config-turbo: 1.8.6_eslint@7.32.0
+      eslint-plugin-react: 7.31.8_eslint@7.32.0
+    devDependencies:
+      typescript: 5.0.2
+
+  packages/config/tsconfig:
+    specifiers: {}
 
   packages/eslint-config-custom:
     specifiers:
@@ -121,42 +141,39 @@ importers:
       eslint: 7.32.0
       eslint-config-next: 13.0.0_jeuwjvsopuo23ctsjsevxmvjsi
       eslint-config-prettier: 8.8.0_eslint@7.32.0
-      eslint-config-turbo: 0.0.10_eslint@7.32.0
+      eslint-config-turbo: 1.8.6_eslint@7.32.0
       eslint-plugin-react: 7.31.8_eslint@7.32.0
     devDependencies:
       typescript: 5.0.2
 
   packages/transpile:
     specifiers:
+      '@trash-oss/tsconfig': workspace:*
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
-      tsconfig: workspace:*
       typescript: ^5.0.2
     devDependencies:
+      '@trash-oss/tsconfig': link:../config/tsconfig
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
-      tsconfig: link:../tsconfig
       typescript: 5.0.2
-
-  packages/tsconfig:
-    specifiers: {}
 
   packages/ui:
     specifiers:
+      '@trash-oss/tsconfig': workspace:*
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
       react: ^18.2.0
-      tsconfig: workspace:*
       typescript: ^5.0.2
     devDependencies:
+      '@trash-oss/tsconfig': link:../config/tsconfig
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
       eslint: 7.32.0
       eslint-config-custom: link:../eslint-config-custom
       react: 18.2.0
-      tsconfig: link:../tsconfig
       typescript: 5.0.2
 
 packages:
@@ -1357,13 +1374,13 @@ packages:
       eslint: 7.32.0
     dev: false
 
-  /eslint-config-turbo/0.0.10_eslint@7.32.0:
-    resolution: {integrity: sha512-o4ULFZYM1OihSd63eDGEuy9rt6tW4ma6xnW9grnr44BoJwKaGQko2aka9kfqQs0vtmwD1++Os3ThPHETmzkFzA==}
+  /eslint-config-turbo/1.8.6_eslint@7.32.0:
+    resolution: {integrity: sha512-LSMqrHmFeQcYRuBnzrzw+B2bJ3+o8wxPkRwfK0Y+SSLsq2F/niRJ2kqB8j4uOSCfxybHHpFEB2CgUpQiiyfeoQ==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 7.32.0
-      eslint-plugin-turbo: 0.0.10_eslint@7.32.0
+      eslint-plugin-turbo: 1.8.6_eslint@7.32.0
     dev: false
 
   /eslint-import-resolver-node/0.3.7:
@@ -1514,8 +1531,8 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
-  /eslint-plugin-turbo/0.0.10_eslint@7.32.0:
-    resolution: {integrity: sha512-T7QRwF4rjBQCJD9AHLHn9ShtHCHNkfIZW5Oio92WtQYhoU5jZCU3ynU+ONFXLuvoUx4dJ19WergIyHL+DwL2+g==}
+  /eslint-plugin-turbo/1.8.6_eslint@7.32.0:
+    resolution: {integrity: sha512-LieXzur+4XtIsLst8GdupTMhvGn2ebFetG3AVErh2jHBy1EobPHbatjcdNZQMy5EsdG35axQVB8KFF3jo4u+OQ==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -2681,65 +2698,65 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /turbo-darwin-64/1.8.5:
-    resolution: {integrity: sha512-CAYh56bzeHfnh7jTm03r29bh8p5a/EjQo1Id5yLUH7hS7msTau/+YpxJWPodLbN0UQsUYivUqHQkglJ+eMJ7xA==}
+  /turbo-darwin-64/1.8.6:
+    resolution: {integrity: sha512-VlXkQR0TEBAEyBRsvAXBax+fj1EdPKPliwBaCnRLiDUcA/8wYlKte/Kk6ubmj9E0n7U/B4keCxxHiJZqW/5Rqg==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-darwin-arm64/1.8.5:
-    resolution: {integrity: sha512-R3jCPOv+lu3dcvMhj8b/Defv6dyUwX6W+tbX7d6YUCA46Plf/bGCQ8+MSbxmr/4E1GyGOVFsn1wRfiYk0us/Dg==}
+  /turbo-darwin-arm64/1.8.6:
+    resolution: {integrity: sha512-w4L2QLj90ex68UXxTPoqtZPl8mWzc6a1RtPjQhoxAWtZf9T2WXi813dCzYEbVUVC09/DOW/VxZRN7sb2r0KP9A==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-64/1.8.5:
-    resolution: {integrity: sha512-YRc/KNRZeUVvth11UO4SDQZR2IqGgl9MSsbzqoHuFz4B4Q5QXH7onHogv9aXWE/BZBBbcrSBTlwBSG0Gg+J8hg==}
+  /turbo-linux-64/1.8.6:
+    resolution: {integrity: sha512-eV245jefIhMAZskqQKalFwreC5UEdQcuHcBiWcgUk0py76fbwB7+1HfH5cmeJlb3a1sB6f3H0HHmGPmb34feCA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-linux-arm64/1.8.5:
-    resolution: {integrity: sha512-8exVZb7XBl/V3gHSweuUyG2D9IzfWqwLvlXoeLWlVYSj61Ajgdv+WU7lvUmx+H2s+sSKqmIFmewA5Lw6YY37sg==}
+  /turbo-linux-arm64/1.8.6:
+    resolution: {integrity: sha512-Kiw3nyEvNU6Bpil4zE5FwhasPAOi59R4YdCmjJp0Sen6V9u+/Jij6SWwaoUdATORJLiYQBbhontWBH55B53VDw==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-64/1.8.5:
-    resolution: {integrity: sha512-fA8PU5ZNoFnQkapG06WiEqfsVQ5wbIPkIqTwUsd/M2Lp+KgxE79SQbuEI+2vQ9SmwM5qoMi515IPjgvXAJXgCw==}
+  /turbo-windows-64/1.8.6:
+    resolution: {integrity: sha512-34BkAG9r4nE00xeMeVahaF82h8R6SO+IIOcD60fNr2p+Ch+YcQa+DbEWA/KUj3coUTIiNP5XnRCLRUYADdlxjQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo-windows-arm64/1.8.5:
-    resolution: {integrity: sha512-SW/NvIdhckLsAWjU/iqBbCB0S8kXupKscUK3kEW1DZIr3MYcP/yIuaE/IdPuqcoF3VP0I3TLD4VTYCCKAo3tKA==}
+  /turbo-windows-arm64/1.8.6:
+    resolution: {integrity: sha512-4jWUaI7Lmonp2I3x81GruiCYd0aQsG/xDOYhuv9+j2yIgB/UHJFz/P8PWp/nziwPtGpRd/AheDlPzzyd9lWoqw==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /turbo/1.8.5:
-    resolution: {integrity: sha512-UBnH2wIFb5g6OQCk8f34Ud15ZXV4xEMmugeDJTU5Ur2LpVRsNEny0isSCYdb3Iu3howoNyyXmtpaxWsAwNYkkg==}
+  /turbo/1.8.6:
+    resolution: {integrity: sha512-6IOOaa8ytgjnSCTnp3LKAd2uGBZ/Kmx8ZPlI/YMWuKMUqvkXKLbh+w76ApMgMm+faUqti+QujVWovCu2kY6KuQ==}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      turbo-darwin-64: 1.8.5
-      turbo-darwin-arm64: 1.8.5
-      turbo-linux-64: 1.8.5
-      turbo-linux-arm64: 1.8.5
-      turbo-windows-64: 1.8.5
-      turbo-windows-arm64: 1.8.5
+      turbo-darwin-64: 1.8.6
+      turbo-darwin-arm64: 1.8.6
+      turbo-linux-64: 1.8.6
+      turbo-linux-arm64: 1.8.6
+      turbo-windows-64: 1.8.6
+      turbo-windows-arm64: 1.8.6
     dev: true
 
   /type-check/0.4.0:
