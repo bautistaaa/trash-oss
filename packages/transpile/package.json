@@ -2,8 +2,12 @@
   "name": "@trash-oss/transpile",
   "version": "0.0.0",
   "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
+    "dev": "tsc --watch",
     "lint": "eslint *.ts*"
   },
   "devDependencies": {

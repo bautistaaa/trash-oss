@@ -9,7 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "clean": "find . -name node_modules -o -name .turbo -o -name .next -o -name dist -type d -prune | xargs rm -rf",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter={chode,@trash-oss/transpile}",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
