@@ -10,7 +10,8 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "outputMode": "errors-only"
     }
   }
 }
