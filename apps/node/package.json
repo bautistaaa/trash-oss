@@ -12,8 +12,6 @@
     "@trash-oss/transpile": "workspace:*"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@trash-oss/tsconfig": "workspace:*",
     "eslint": "^7.32.0",

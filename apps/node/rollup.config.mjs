@@ -1,6 +1,4 @@
 import typescript from "@rollup/plugin-typescript";
-import commonjs from "@rollup/plugin-commonjs";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -14,8 +12,6 @@ export default {
     },
   ],
   plugins: [
-    commonjs(),
-    nodeResolve(),
     typescript({
       tsconfig: "./tsconfig.json",
     }),
