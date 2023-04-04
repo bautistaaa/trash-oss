@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "resolveJsonModule": true
+  },
+  "extends": "@trash-oss/tsconfig/base.json",
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"]
+}

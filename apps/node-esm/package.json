@@ -1,0 +1,25 @@
+{
+  "name": "chode",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.mjs",
+    "dev": "tsx watch src/index.ts",
+    "serve": "node dist/index.js"
+  },
+  "dependencies": {
+    "@trash-oss/esm-package": "workspace:*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@trash-oss/tsconfig": "workspace:*",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "rollup": "^3.20.2",
+    "tsx": "^3.12.6",
+    "typescript": "^5.0.2"
+  }
+}

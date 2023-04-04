@@ -1,0 +1,23 @@
+{
+  "name": "@trash-oss/esm-package",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": { 
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@trash-oss/tsconfig": "workspace:*",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "typescript": "^5.0.2"
+  }
+}
