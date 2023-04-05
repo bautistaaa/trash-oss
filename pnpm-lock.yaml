@@ -46,7 +46,7 @@ importers:
   apps/node:
     specifiers:
       '@rollup/plugin-typescript': ^11.0.0
-      '@trash-oss/transpile': workspace:*
+      '@trash-oss/cjs': workspace:*
       '@trash-oss/tsconfig': workspace:*
       eslint: ^7.32.0
       eslint-config-custom: workspace:*
@@ -54,7 +54,7 @@ importers:
       tsx: ^3.12.6
       typescript: ^5.0.2
     dependencies:
-      '@trash-oss/transpile': link:../../packages/transpile
+      '@trash-oss/cjs': link:../../packages/cjs
     devDependencies:
       '@rollup/plugin-typescript': 11.0.0_dpenfibtlqpfrulx5rm72ngxhu
       '@trash-oss/tsconfig': link:../../packages/config/tsconfig
@@ -141,6 +141,18 @@ importers:
       eslint-config-custom: link:../../packages/eslint-config-custom
       typescript: 5.0.2
 
+  packages/cjs:
+    specifiers:
+      '@trash-oss/tsconfig': workspace:*
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      typescript: ^5.0.2
+    devDependencies:
+      '@trash-oss/tsconfig': link:../config/tsconfig
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      typescript: 5.0.2
+
   packages/common:
     specifiers:
       '@trash-oss/tsconfig': workspace:*
@@ -197,18 +209,6 @@ importers:
       typescript: 5.0.2
 
   packages/esm:
-    specifiers:
-      '@trash-oss/tsconfig': workspace:*
-      eslint: ^7.32.0
-      eslint-config-custom: workspace:*
-      typescript: ^5.0.2
-    devDependencies:
-      '@trash-oss/tsconfig': link:../config/tsconfig
-      eslint: 7.32.0
-      eslint-config-custom: link:../eslint-config-custom
-      typescript: 5.0.2
-
-  packages/transpile:
     specifiers:
       '@trash-oss/tsconfig': workspace:*
       eslint: ^7.32.0

@@ -1,5 +1,5 @@
 {
-  "name": "@trash-oss/transpile",
+  "name": "@trash-oss/cjs",
   "version": "0.0.0",
   "license": "MIT",
   "exports": {

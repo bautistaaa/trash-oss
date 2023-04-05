@@ -9,7 +9,7 @@
     "serve": "node dist/index.js"
   },
   "dependencies": {
-    "@trash-oss/transpile": "workspace:*"
+    "@trash-oss/cjs": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
