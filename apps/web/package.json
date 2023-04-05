@@ -25,6 +25,7 @@
     "eslint": "7.32.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
+    "tailwind-config": "workspace:*",
     "tailwindcss": "^3.2.4",
     "typescript": "^5.0.2"
   }

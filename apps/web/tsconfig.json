@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "moduleResolution": "nodenext"
   },
   "extends": "@trash-oss/tsconfig/nextjs.json",
