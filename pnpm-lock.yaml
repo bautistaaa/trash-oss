@@ -148,9 +148,11 @@ importers:
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
+      autoprefixer: ^10.4.14
       eslint: 7.32.0
       eslint-config-custom: workspace:*
       next: ^13.1.1
+      postcss: ^8.4.21
       react: 18.2.0
       react-dom: 18.2.0
       tailwind-config: workspace:*
@@ -168,10 +170,12 @@ importers:
       '@types/node': 17.0.45
       '@types/react': 18.0.29
       '@types/react-dom': 18.0.11
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
+      postcss: 8.4.21
       tailwind-config: link:../../packages/config/tailwind
-      tailwindcss: 3.3.1
+      tailwindcss: 3.3.1_postcss@8.4.21
       typescript: 5.0.2
 
   packages/cjs:

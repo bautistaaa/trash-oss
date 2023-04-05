@@ -5,7 +5,7 @@ import { sum } from "@trash-oss/common";
 export default function Web() {
   const x = sum(1, 2);
   return (
-    <div>
+    <div className="font-bold text-red-400">
       <h1>Web {x}</h1>
       <Button />
       <Button2 />
