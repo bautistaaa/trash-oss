@@ -15,7 +15,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@trash-oss/tsconfig": "workspace:*",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-trash": "workspace:*",
     "rollup": "^3.20.2",
     "tsx": "^3.12.6",
     "typescript": "^5.0.2"

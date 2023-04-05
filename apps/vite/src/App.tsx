@@ -1,7 +1,7 @@
-import { fn, sum } from "@trash-oss/esm-package";
+import { fn, sum } from '@trash-oss/esm-package';
 
 // examples for if you dont support esm
-const x = await import("@trash-oss/esm-package");
+const x = await import('@trash-oss/esm-package');
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import { Button } from "@trash-oss/ui/foo";
+import { Button } from '@trash-oss/ui/foo';
 
 export default function Docs() {
   return (

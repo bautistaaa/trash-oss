@@ -1,1 +1,1 @@
-export const myFunction = () => "asdad";
+export const myFunction = () => 'asdad';
