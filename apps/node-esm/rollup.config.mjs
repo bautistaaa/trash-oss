@@ -1,3 +1,4 @@
+// example bundling config
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 
