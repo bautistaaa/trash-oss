@@ -12,6 +12,9 @@ const config = {
   env: {
     node: true,
   },
+  parserOptions: {
+    sourceType: 'module',
+  },
 };
 
 module.exports = config;
