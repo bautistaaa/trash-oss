@@ -4,8 +4,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "ts",
-    "bundle": "rollup --config rollup.config.mjs",
+    "build": "tsc",
     "dev": "tsx watch src/index.ts",
     "serve": "node dist/index.js"
   },
