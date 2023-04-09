@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
     "outDir": "dist",
-    "resolveJsonModule": true
   },
-  "extends": "@trash-oss/tsconfig/base.json",
+  "extends": "@trash-oss/tsconfig/node.json",
   "include": ["src"],
   "exclude": ["dist", "build", "node_modules"]
 }
