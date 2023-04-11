@@ -1,19 +1,19 @@
-import typescript from "@rollup/plugin-typescript";
+import typescript from '@rollup/plugin-typescript';
 
-import packageJson from "./package.json" assert { type: "json" };
+import packageJson from './package.json' assert { type: 'json' };
 
 export default {
-  input: "src/index.ts",
+  input: 'src/index.ts',
   output: [
     {
-      exports: "named",
+      exports: 'named',
       file: packageJson.main,
-      format: "cjs",
+      format: 'cjs',
     },
   ],
   plugins: [
     typescript({
-      tsconfig: "./tsconfig.json",
+      tsconfig: './tsconfig.json',
     }),
   ],
 };

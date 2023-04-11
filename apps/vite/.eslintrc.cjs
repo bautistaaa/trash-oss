@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['trash/base'],
+  extends: ['trash/base', 'trash/react'],
   settings: {
     'import/resolver': {
       typescript: {
