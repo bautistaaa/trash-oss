@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "resolveJsonModule": true
+    "outDir": "dist"
   },
   "extends": "@trash-oss/tsconfig/base.json",
   "include": ["src"],
